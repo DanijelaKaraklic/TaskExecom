@@ -1,0 +1,22 @@
+
+
+public int sumMultipliers(int n){
+	int sum = 0;
+	
+	for(int i = 1; i <= n/3; i++){
+		if(i*3 < n){
+			sum += i*3;
+		}
+		
+	}
+
+	for(int i = 1; i <= n/5; i++){
+		if(i*5 < n){
+			sum += i*5;
+		}
+		
+	}
+
+	return sum;	
+
+}
